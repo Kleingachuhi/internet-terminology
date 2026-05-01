@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internet Terminology — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Index-specific nav adjustments */
+    nav { position: sticky; top: 0; }
+    .nav-links a[href="index.html"] { color: var(--accent); }
+
+    .home-hero {
+      padding: 6rem 2rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .home-hero::before {
+      content: '';
+      position: absolute;
+      top: -150px; left: 50%;
+      transform: translateX(-50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(124,58,237,0.07) 0%, rgba(0,212,255,0.05) 40%, transparent 70%);
+      pointer-events: none;
+    }
+    .home-hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+      background: linear-gradient(135deg, #fff 20%, var(--accent) 60%, var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .home-hero p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 560px;
+      margin: 0 auto 2rem;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat .n {
+      font-family: 'Space Mono', monospace;
+      font-size: 2rem;
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .stat .l { font-size: 0.8rem; color: var(--muted); margin-top: 2px; }
+    .section-label {
+      text-align: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent2);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav injected by nav.js (index version) -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">&lt;<span>InternetTerms</span>/&gt;</a>
+      <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰ MENU</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/www.html">WWW</a></li>
+        <li><a href="pages/tcp-ip.html">TCP/IP</a></li>
+        <li><a href="pages/web-browsers.html">Browsers</a></li>
+        <li><a href="pages/web-servers.html">Servers</a></li>
+        <li><a href="pages/url.html">URL</a></li>
+        <li><a href="pages/dns.html">DNS</a></li>
+        <li><a href="pages/http.html">HTTP</a></li>
+        <li><a href="pages/intranet.html">Intranet</a></li>
+        <li><a href="pages/extranet.html">Extranet</a></li>
+        <li><a href="pages/multitier.html">Multitier</a></li>
+        <li><a href="pages/ftp.html">FTP</a></li>
+        <li><a href="pages/html-term.html">HTML</a></li>
+        <li><a href="pages/web1.html">Web 1.0</a></li>
+        <li><a href="pages/web2.html">Web 2.0</a></li>
+        <li><a href="pages/web3.html">Web 3.0</a></li>
+        <li><a href="pages/web4.html">Web 4.0</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="home-hero">
+    <div class="term-badge">Topic 1 · Internet Terminology</div>
+    <h1>The Building Blocks<br>of the Internet</h1>
+    <p>A comprehensive reference guide covering 16 essential internet and web technology terms — from foundational protocols to the evolution of the Web.</p>
+
+    <div class="stat-row">
+      <div class="stat"><div class="n">16</div><div class="l">Terms Covered</div></div>
+      <div class="stat"><div class="n">17</div><div class="l">HTML Pages</div></div>
+      <div class="stat"><div class="n">4</div><div class="l">Web Generations</div></div>
+    </div>
+  </div>
+
+  <p class="section-label">— Browse All Terms —</p>
+
+  <div class="terms-grid">
+
+    <a class="term-card" href="pages/www.html">
+      <div class="card-tag">Network</div>
+      <h3>World Wide Web</h3>
+      <p>The system of interlinked hypertext documents accessed via the Internet.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/tcp-ip.html">
+      <div class="card-tag">Protocol</div>
+      <h3>TCP/IP</h3>
+      <p>The fundamental communication protocols that power the Internet.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/web-browsers.html">
+      <div class="card-tag">Software</div>
+      <h3>Web Browsers</h3>
+      <p>Applications used to access, retrieve, and display web content.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/web-servers.html">
+      <div class="card-tag">Infrastructure</div>
+      <h3>Web Servers</h3>
+      <p>Computers that store and deliver web pages to browsers on request.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/url.html">
+      <div class="card-tag">Addressing</div>
+      <h3>URL</h3>
+      <p>Uniform Resource Locators — the web's addressing system.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/dns.html">
+      <div class="card-tag">Protocol</div>
+      <h3>Domain Name Server</h3>
+      <p>The Internet's phonebook — translating domain names to IP addresses.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/http.html">
+      <div class="card-tag">Protocol</div>
+      <h3>HTTP</h3>
+      <p>Hypertext Transfer Protocol — the foundation of data exchange on the Web.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/intranet.html">
+      <div class="card-tag">Network</div>
+      <h3>Intranet</h3>
+      <p>A private network accessible only within an organisation.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/extranet.html">
+      <div class="card-tag">Network</div>
+      <h3>Extranet</h3>
+      <p>A controlled private network shared with select external partners.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/multitier.html">
+      <div class="card-tag">Architecture</div>
+      <h3>Multitier Architecture</h3>
+      <p>Separating an application into presentation, logic, and data tiers.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/ftp.html">
+      <div class="card-tag">Protocol</div>
+      <h3>File Transfer Protocol</h3>
+      <p>Standard protocol for transferring files between computers over a network.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/html-term.html">
+      <div class="card-tag">Language</div>
+      <h3>HTML</h3>
+      <p>Hypertext Markup Language — the standard language for web pages.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/web1.html">
+      <div class="card-tag">Web Evolution</div>
+      <h3>Web 1.0</h3>
+      <p>The "read-only" web era of static pages and one-way information.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/web2.html">
+      <div class="card-tag">Web Evolution</div>
+      <h3>Web 2.0</h3>
+      <p>The social, participatory web where users create and share content.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/web3.html">
+      <div class="card-tag">Web Evolution</div>
+      <h3>Web 3.0</h3>
+      <p>The semantic and decentralised web powered by blockchain and AI.</p>
+      <span class="arrow">→</span>
+    </a>
+
+    <a class="term-card" href="pages/web4.html">
+      <div class="card-tag">Web Evolution</div>
+      <h3>Web 4.0</h3>
+      <p>The intelligent, symbiotic web integrating AI, IoT, and immersive tech.</p>
+      <span class="arrow">→</span>
+    </a>
+
+  </div>
+
+  <footer>
+    <p>Internet Terminology Reference &nbsp;|&nbsp; Topic 1 Assignment &nbsp;|&nbsp;
+      <a href="https://github.com">View on GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>
