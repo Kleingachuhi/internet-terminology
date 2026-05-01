@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Servers — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <script src="../nav.js"></script>
+
+  <div class="hero">
+    <div class="term-badge">Infrastructure · Backend</div>
+    <h1>Web Servers</h1>
+    <p class="subtitle"><em>Computers that store and serve web pages on request</em></p>
+  </div>
+
+  <div class="content">
+    <img class="term-img" src="../images/web-server.svg" alt="Web server infrastructure rack" />
+    <div class="fact-grid"><div class="fact-card"><div class="num">Apache</div><div class="label">Most Popular</div></div><div class="fact-card"><div class="num">99.99%</div><div class="label">Target Uptime</div></div><div class="fact-card"><div class="num">Nginx</div><div class="label">2nd Most Used</div></div><div class="fact-card"><div class="num">80/443</div><div class="label">HTTP Ports</div></div></div>
+    
+    <div class="section">
+      <h2>What is a Web Server?</h2>
+      <p>A web server is a computer that stores website files (HTML, CSS, images, etc.) and delivers them to users' browsers upon request. When you visit a website, your browser sends an HTTP request to the web server hosting that site, and the server responds by sending back the requested files.</p><p>Web servers can refer to both the hardware (the physical or virtual machine) and the software (the program that handles HTTP requests). Popular web server software includes Apache HTTP Server, Nginx, Microsoft IIS, and LiteSpeed.</p>
+      <div class='highlight-box'>Every website you've ever visited was served from a web server — it is the backbone of the Web.</div>
+      
+    </div>
+    <div class="section">
+      <h2>How a Web Server Processes a Request</h2>
+      
+      
+      <ul class='term-list'><li>Client (browser) sends an HTTP request to the server's IP address</li><li>DNS resolves the domain name to find the IP</li><li>Server receives the request and locates the requested file</li><li>Server sends back an HTTP response with the file or an error code</li><li>Browser renders the received content for the user</li></ul>
+    </div>
+    <div class="section">
+      <h2>Types of Web Servers</h2>
+      <p>Static web servers simply serve pre-made files without any processing. Dynamic web servers can run application logic (using PHP, Python, Node.js, etc.) to generate pages on the fly based on user requests or database queries.</p><p>Modern web hosting uses cloud infrastructure (AWS, Google Cloud, Azure) where thousands of virtual servers handle traffic. Load balancers distribute incoming requests across multiple servers to prevent overload.</p>
+      
+      
+    </div>
+    <div class="section">
+      <h2>Common HTTP Status Codes</h2>
+      
+      
+      <ul class='term-list'><li>200 OK — Request successful</li><li>301 Moved Permanently — Resource has a new URL</li><li>404 Not Found — Page doesn't exist</li><li>500 Internal Server Error — Something went wrong on the server</li></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="../index.html">← Back to Home</a> &nbsp;|&nbsp;
+      Internet Terminology Reference &nbsp;|&nbsp; Topic 1
+    </p>
+  </footer>
+</body>
+</html>
