@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hypertext Transfer Protocol — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <script src="../nav.js"></script>
+
+  <div class="hero">
+    <div class="term-badge">Protocol · Communication</div>
+    <h1>Hypertext Transfer Protocol</h1>
+    <p class="subtitle"><em>The foundation of data exchange on the Web</em></p>
+  </div>
+
+  <div class="content">
+    <img class="term-img" src="../images/http.svg" alt="HTTP request response cycle" />
+    <div class="fact-grid"><div class="fact-card"><div class="num">Port 80</div><div class="label">HTTP Default</div></div><div class="fact-card"><div class="num">Port 443</div><div class="label">HTTPS Default</div></div><div class="fact-card"><div class="num">HTTP/3</div><div class="label">Latest Version</div></div><div class="fact-card"><div class="num">TLS</div><div class="label">HTTPS Security</div></div></div>
+    
+    <div class="section">
+      <h2>What is HTTP?</h2>
+      <p>HTTP (Hypertext Transfer Protocol) is the application-layer protocol used for transmitting data on the World Wide Web. It defines how messages are formatted and transmitted between web browsers (clients) and web servers, and what actions servers should take in response to various types of requests.</p><p>HTTP was developed by Tim Berners-Lee alongside HTML and URLs as the three core pillars of the Web. The current version, HTTP/3, uses QUIC (a UDP-based transport) for faster, more reliable communication.</p>
+      <div class='highlight-box'>HTTP is the conversation protocol of the Web — it governs every request and response between you and any website.</div>
+      
+    </div>
+    <div class="section">
+      <h2>HTTP Methods</h2>
+      <p>HTTP defines several request methods (also called verbs) that indicate the desired action on a resource.</p>
+      
+      <ul class='term-list'><li>GET — retrieve a resource (most common — loading a web page)</li><li>POST — send data to a server (e.g., submitting a form)</li><li>PUT — update an existing resource</li><li>DELETE — remove a resource</li><li>HEAD — like GET but returns only headers, no body</li><li>OPTIONS — describes communication options for the target</li></ul>
+    </div>
+    <div class="section">
+      <h2>HTTP vs HTTPS</h2>
+      <p>HTTPS (HTTP Secure) is the encrypted version of HTTP. It uses TLS (Transport Layer Security) to encrypt the communication, ensuring confidentiality, integrity, and authentication. All modern websites should use HTTPS to protect users' data.</p><p>You can tell a site uses HTTPS by looking for the padlock icon in your browser's address bar and the URL beginning with https://.</p>
+      
+      
+    </div>
+    <div class="section">
+      <h2>HTTP Evolution</h2>
+      
+      
+      <ul class='term-list'><li>HTTP/0.9 (1991) — simple GET requests only</li><li>HTTP/1.0 (1996) — headers, multiple content types</li><li>HTTP/1.1 (1997) — persistent connections, chunked transfer</li><li>HTTP/2 (2015) — multiplexing, header compression, server push</li><li>HTTP/3 (2022) — built on QUIC for lower latency</li></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="../index.html">← Back to Home</a> &nbsp;|&nbsp;
+      Internet Terminology Reference &nbsp;|&nbsp; Topic 1
+    </p>
+  </footer>
+</body>
+</html>
