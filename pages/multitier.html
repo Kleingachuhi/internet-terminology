@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multitier Architecture — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <script src="../nav.js"></script>
+
+  <div class="hero">
+    <div class="term-badge">Architecture · Design</div>
+    <h1>Multitier Architecture</h1>
+    <p class="subtitle"><em>Separating applications into distinct functional layers</em></p>
+  </div>
+
+  <div class="content">
+    <img class="term-img" src="../images/multitier.svg" alt="3-tier architecture diagram" />
+    <div class="fact-grid"><div class="fact-card"><div class="num">3</div><div class="label">Common Tiers</div></div><div class="fact-card"><div class="num">UI/Logic/Data</div><div class="label">Layers</div></div><div class="fact-card"><div class="num">Scalable</div><div class="label">Key Benefit</div></div><div class="fact-card"><div class="num">MVC</div><div class="label">Related Pattern</div></div></div>
+    
+    <div class="section">
+      <h2>What is Multitier Architecture?</h2>
+      <p>Multitier architecture (also called n-tier architecture) is a client-server architecture in which the application is divided into separate logical layers, each responsible for a specific function. The most common form is the 3-tier architecture, which separates an application into the Presentation Tier, Application (Logic) Tier, and Data Tier.</p><p>This separation of concerns makes applications easier to develop, maintain, scale, and secure. Changes to one tier can be made independently without disrupting the others.</p>
+      
+      
+    </div>
+    <div class="section">
+      <h2>The Three Tiers</h2>
+      
+      <div class='highlight-box'>Separating tiers is like separating the kitchen, dining room, and pantry in a restaurant — each has a clear role.</div>
+      <ul class='term-list'><li>Tier 1 — Presentation (Client): The user interface layer — what users see. This is the web browser, mobile app, or desktop GUI.</li><li>Tier 2 — Application (Logic): The business logic layer — processes data, applies rules, and coordinates between the UI and database.</li><li>Tier 3 — Data: The database layer — stores, retrieves, and manages persistent data using systems like MySQL, PostgreSQL, or MongoDB.</li></ul>
+    </div>
+    <div class="section">
+      <h2>Benefits of Multitier Architecture</h2>
+      <p>Scalability: each tier can be scaled independently. Security: the database tier is never directly exposed to users. Maintainability: developers can work on different tiers simultaneously.</p><p>Reusability: the same logic tier can serve multiple presentation layers (web, mobile, API). This architecture underpins most modern web applications, cloud services, and enterprise software.</p>
+      
+      
+    </div>
+    <div class="section">
+      <h2>Beyond 3 Tiers</h2>
+      <p>Modern applications sometimes use 4 or more tiers — for example, adding a caching layer, an API gateway, or a microservices layer. The concept generalises to any number of tiers as long as each has a clearly defined responsibility.</p>
+      
+      
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="../index.html">← Back to Home</a> &nbsp;|&nbsp;
+      Internet Terminology Reference &nbsp;|&nbsp; Topic 1
+    </p>
+  </footer>
+</body>
+</html>
