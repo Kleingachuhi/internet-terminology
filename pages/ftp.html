@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>File Transfer Protocol — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <script src="../nav.js"></script>
+
+  <div class="hero">
+    <div class="term-badge">Protocol · Transfer</div>
+    <h1>File Transfer Protocol</h1>
+    <p class="subtitle"><em>Standard protocol for transferring files over a network</em></p>
+  </div>
+
+  <div class="content">
+    <img class="term-img" src="../images/ftp.svg" alt="FTP file transfer illustration" />
+    <div class="fact-grid"><div class="fact-card"><div class="num">Port 21</div><div class="label">Control Channel</div></div><div class="fact-card"><div class="num">Port 20</div><div class="label">Data Channel</div></div><div class="fact-card"><div class="num">1971</div><div class="label">First Spec</div></div><div class="fact-card"><div class="num">SFTP</div><div class="label">Secure Version</div></div></div>
+    
+    <div class="section">
+      <h2>What is FTP?</h2>
+      <p>File Transfer Protocol (FTP) is a standard network protocol used for the transfer of files between a client and a server over a TCP/IP network. FTP was one of the earliest Internet protocols, developed in the 1970s, and is still used today for uploading website files to a web server, sharing large files, and managing remote file systems.</p><p>FTP operates using a client-server model. The FTP client (software like FileZilla) connects to an FTP server, authenticates with a username and password, and can then upload, download, rename, delete, or manage files on the server.</p>
+      <div class='highlight-box'>FTP was the original cloud storage — long before Google Drive, files were moved around the Internet via FTP.</div>
+      
+    </div>
+    <div class="section">
+      <h2>How FTP Works</h2>
+      
+      
+      <ul class='term-list'><li>Client connects to the FTP server (default port 21)</li><li>Client authenticates with username and password</li><li>Control connection is established for commands</li><li>A separate data connection is opened for file transfers</li><li>Files are transferred; connection is closed when done</li></ul>
+    </div>
+    <div class="section">
+      <h2>FTP Security: SFTP and FTPS</h2>
+      <p>Standard FTP transmits data — including usernames and passwords — in plain text, making it vulnerable to interception. Two secure alternatives exist: SFTP (SSH File Transfer Protocol) uses SSH encryption for all data; FTPS (FTP Secure) adds TLS/SSL encryption to standard FTP.</p><p>Modern best practice is to use SFTP or FTPS instead of plain FTP to protect sensitive file transfers.</p>
+      
+      
+    </div>
+    <div class="section">
+      <h2>Common FTP Clients</h2>
+      
+      
+      <ul class='term-list'><li>FileZilla — free, open-source, cross-platform</li><li>WinSCP — Windows-only, supports SFTP and SCP</li><li>Cyberduck — macOS and Windows</li><li>Command-line ftp — built into most operating systems</li></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="../index.html">← Back to Home</a> &nbsp;|&nbsp;
+      Internet Terminology Reference &nbsp;|&nbsp; Topic 1
+    </p>
+  </footer>
+</body>
+</html>
