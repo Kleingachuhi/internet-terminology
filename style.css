@@ -250,7 +250,6 @@ ul.term-list li::before {
   margin-top: 2px;
 }
 
-/* ===== FOOTER ===== */
 footer {
   border-top: 1px solid var(--border);
   padding: 2rem;
@@ -262,7 +261,6 @@ footer {
 
 footer a { color: var(--accent); text-decoration: none; }
 
-/* ===== HOME GRID ===== */
 .terms-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
